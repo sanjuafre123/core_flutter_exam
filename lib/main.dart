@@ -1,6 +1,7 @@
+import 'package:core_flutter_exam/componetns/Add_data_Screen/dataScreen.dart';
 import 'package:flutter/material.dart';
-
-import 'componetns/HomeScreen.dart';
+import 'componetns/Detail/DetailsScreen.dart';
+import 'componetns/Homepage/HomeScreen.dart';
 
 void main()
 {
@@ -20,7 +21,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/' : (context) =>  const HomeScreen(),
+        '/' : (context) =>  const HomePage(),
+        '/Detail' : (context) =>  const DetailsScreen(),
+        '/data' : (context) =>  const DataScreen(),
       },
     );
   }
